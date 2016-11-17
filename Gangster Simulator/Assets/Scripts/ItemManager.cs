@@ -21,8 +21,12 @@ public class ItemManager : MonoBehaviour {
 	private float _baseCost;
 	public Sprite original;
 	public Sprite T2;
+    public Sprite T3;
+    public Sprite T4;
+    public Sprite T5;
 
-	void Awake()
+
+    void Awake()
 	{
 
 	}
@@ -62,7 +66,22 @@ public class ItemManager : MonoBehaviour {
 			
 			img.sprite = T2;
 		}
-		click.Save ();
+        if (count == 20)
+        {
+
+            img.sprite = T3;
+        }
+        if (count == 30)
+        {
+
+            img.sprite = T4;
+        }
+        if (count == 40)
+        {
+
+            img.sprite = T5;
+        }
+        click.Save ();
 	}
 
     public void reset()
