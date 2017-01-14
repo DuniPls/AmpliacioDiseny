@@ -19,12 +19,13 @@ public class Spawner : MonoBehaviour {
 			cares1.GetComponent<SpriteRenderer>().sprite = cares[Random.Range (0,16)];
 			cares1.transform.SetParent(transform);
 			rand = Random.Range (0,8);
+            /*
         GameObject cossos1 = Instantiate (Cos[rand],new Vector3(transform.position.x,transform.position.y-0.30f,transform.position.z),transform.rotation) as GameObject;
 			//cossos1.GetComponent<SpriteRenderer>().sprite = cossos[rand];
 		//cossos1.GetComponent<Animation> ().Play ();
 		cossos1.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
 			cossos1.transform.SetParent(transform);
-        
+        */
     
     }
 	
